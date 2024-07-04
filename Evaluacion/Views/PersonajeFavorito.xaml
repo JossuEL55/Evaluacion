@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Evaluacion.Views.PersonajeFavorito"
+             Title="Personaje Favorito">
+
+    <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+      
+        <Image Source="arthur.jpg" WidthRequest="200" HeightRequest="200" 
+               HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <Label Text="A mi, Jossue Ayala, me gusta Arthur Morgan por que es mi personaje favorito de los videojuegos. Toda su historia y sus acciones son dignas de ejemplo, sin duda alguna Rockstar Games hizo un excelente trabajo creando este juego con un excelente personaje"
+               HorizontalOptions="Center" VerticalOptions="Center" 
+               Margin="0,20,0,20" />
+
+        
+        <Button Text="Volver" Clicked="OnBackButtonClicked" 
+                HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>

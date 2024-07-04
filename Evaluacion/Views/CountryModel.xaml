@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Evaluacion.ViewModels"
+             x:Class="Evaluacion.Views.CountryModel"
+             Title="Examen Tercer Progreso">
+
+    <ContentPage.BindingContext>
+        <local:ViewPage />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="20" BackgroundColor="#F0F8FF">
+        <Button Text="Obtener Paises"
+                Command="{Binding GetCountriesCommand}"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,0,0,10" />
+
+        <ListView ItemsSource="{Binding Countries}"
+                  BackgroundColor="#FFFFFF"
+                  Margin="0,10,0,10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nombre}" Detail="{Binding Codigo}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Mostrar Personaje Favorito"
+                Command="{Binding ShowFavoriteCharacterCommand}"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>
+
+

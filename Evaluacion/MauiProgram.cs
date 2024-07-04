@@ -16,10 +16,18 @@ namespace Evaluacion
                 });
 
 #if DEBUG
+<<<<<<< HEAD
     		builder.Logging.AddDebug();
+=======
+            builder.Logging.AddDebug();
+>>>>>>> Agregar archivos de proyecto.
 #endif
 
             return builder.Build();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Agregar archivos de proyecto.

@@ -22,4 +22,8 @@
         }
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Agregar archivos de proyecto.
